@@ -1,0 +1,721 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>الكافيــــة</title>
+
+    <link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet">
+    <link rel="icon"href="assets/icon/icon3.png">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/كافية.css">
+  </head>
+  <body>
+<!--header-->
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+       
+          <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">    
+          </a></h6>
+         
+    
+    
+                    <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="page2.html"><h4><img  src="assets/icon2/رجوع.svg"></h4></a>
+                    </li>    
+    
+                   
+                  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                  <!--/search-right-->
+                  <div class="search-right">
+                      
+                      <!-- search popup -->
+                      <div id="search" class="pop-overlay">
+                          <div class="popup">
+    
+                              <form action="error.html" method="GET" class="search-box">
+                                  <input type="search" placeholder="Enter Keyword" name="search" required="required"
+                                      autofocus="">
+                                  <button type="submit" class="btn"><span class="fa fa-search"
+                                          aria-hidden="true"></span></button>
+                                          <h4>غــــرف عاديــة - الطابق الرابع</h4>
+                              </form>
+    
+                          </div>
+                          <a class="close" href="#close">×</a>
+                      </div>
+                      <!-- /search popup -->
+                  </div>
+                  <!--//search-right-->
+                  <div class="top-quote mr-lg-3 mt-lg-0">
+                    
+                  </div>
+              </div>
+              <!-- toggle switch for light and dark theme -->
+              <!--<div class="mobile-position">
+                  <nav class="navigation">
+                      <div class="theme-switch-wrapper">
+                          <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox">
+                              <div class="mode-container">
+                                  <i class="gg-sun"></i>
+                                  <i class="gg-moon"></i>
+                              </div>
+                          </label>
+                      </div>
+                  </nav>
+              </div>-->
+              <!-- //toggle switch for light and dark theme -->
+          </nav>
+      </div>
+    </header>
+    <!--/header-->
+    <section class="w3l-about-breadcrumb">
+        
+    </section>
+    <style>
+.xxxz{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+ 
+ 
+  color:white;
+  background-color:  rgba(5, 83, 83, 0.514);
+  padding: 5px;
+ 
+  
+}
+
+    </style>
+<!------------------------------------------------------------------------------------------------------------------------>
+<style>
+
+  #carousel {
+              position: relative;
+              width: 100%;
+              height: 390px;
+              overflow: hidden;
+           
+              border-radius: 10px;
+            
+              text-align: center;
+          }
+          .carousel-item {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              transition: opacity 0.5s ease;
+              
+          }
+          .carousel-item.active {
+              opacity: 1;
+          }
+          .carousel-controls {
+              position: absolute;
+              top: 50%;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              transform: translateY(-50%);
+             
+          }
+          .control-button {
+         
+              border: none;
+             
+              cursor: pointer;
+           
+           
+          }
+    .iom {
+      width: 65%;
+      height: 200px;
+      padding: 0px;
+      border-radius: 10px;
+    }
+    .overlay {
+              position: absolute;
+              bottom: 10px;
+              top: 5px;
+              left: 20px;
+              color:rgb(219, 156, 41);
+        
+              padding: 10px;
+              border-radius: 10px;
+              font-size: 35px;
+            
+              font-weight: bold;
+             
+          }
+  </style>
+  
+  <div id="carousel">
+    
+    
+    <br></br>
+    <img  class="v" src="assets/images2/الشعار.png" width="300px">
+    <br></br>
+    <div class="carousel-item active">
+        <img class="iom" src="assets/images2/1.png" alt="صنف 1">
+        <div class="overlay">كافية لاتية</div>
+        
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="assets/المرافق/coffee1.png" alt="صنف 2">
+        <div class="overlay">كابتشينو</div>
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="assets/المرافق/coffee2.png" alt="صنف 3">
+        <div class="overlay">كراميل لاتية</div>
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="assets/المرافق/coffee3.png" alt="صنف 4">
+        <div class="overlay">هوت شوكلت</div>
+    </div>
+  
+   <div class="carousel-controls">
+        <p class="control-button" id="prev"></p>
+        <p class="control-button" id="next"></p>
+    </div>
+   
+  </div>
+  <h4 class="x">كافي شوب</h4>
+  <h4 class="xxxz">اب - شــارع الثلاثين - مقابل جامعة العلوم والتكنولوجيــا</h4>
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+  
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.remove('active');
+            if (i === index) {
+                item.classList.add('active');
+            }
+        });
+    }
+  
+    function nextItem() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+    }
+  
+    document.getElementById('next').addEventListener('click', nextItem);
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+    });
+  
+    // تغيير الصورة تلقائيًا كل 3 ثوانٍ
+    setInterval(nextItem, 4000);
+  </script>
+    
+                 
+               
+                <br>
+             <!-- <h4 class="title-big mx-0"><img  src="assets/images2/1.png" width="70%"></h4>
+                <h4 class="x">Coffee Shop</h4><br>-->  
+              
+                
+           
+<!----------------------------------------------------------دفتر ارشاد--------------------------------------------------------->
+<style>
+    .v{
+      
+        border-radius: 20px;
+    }
+hr{
+    border: none;
+   height: 3px;
+   background-color:teal;
+   border-radius: 20px;
+   margin: 20px;
+  }
+.x{
+  color: rgb(219, 156, 41);
+    font-weight: bold;
+    font-size: 35px;
+  
+}
+.x1{
+    color:rgb(2, 91, 91);
+    font-weight: bold;
+}
+.x2{
+    border: 1px solid teal;
+    background-color: teal;
+    color:white;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 5px;
+}
+.txt1{
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+table {
+  /*  border: 1px solid white;
+    border-collapse: collapse;*/
+    width: 100%;
+}
+th, td {
+   
+    padding: .3rem;
+    font-weight: bold;
+}
+th {
+    text-align: center;
+}
+
+caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* background: #fede12; */
+    padding: .3rem 0;
+}
+
+thead, tfoot {
+    background: teal;
+    font-size: 20px;
+    color: #fff;
+}
+tbody tr:nth-child(even) {
+    background: #ddd;
+}
+.B{
+    color: rgb(4, 121, 121);
+}
+</style>
+
+
+</section>
+
+
+
+
+
+<article>
+  
+<div class="x2">
+<h4 class="txt1">MENU</h4>
+
+    
+</div>
+    <table>
+        
+        <colgroup>
+            <col span="1" class="column">
+        </colgroup>
+        <thead>
+            <tr>
+                
+                <th>الكلفـــة</th>
+                <th>المكونـــات</th>
+                <th>المشروبات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+            
+                <td class="B">1300﷼</td>
+                <td class="B"> قهوة - حليب   - رغوة</td>
+                <td class="B">كابتشينو</td>
+            </tr>
+            <tr>
+               
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - حليب - رغوة - فانيلا</td>
+                <td class="B">كافية لاتية</td>
+            </tr>
+            <tr>
+               
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - فانيلا - كراميل - رغوة</td>
+                <td class="B">كراميل لاتية</td>
+            </tr>
+            <tr>
+             
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - فانيلا - رغوة</td>
+                <td class="B">فانيلا لاتية</td>
+            </tr>
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - سنكرز - رغوة</td>
+                <td class="B">سنكرز لاتية</td>
+            </tr>
+            <tr>
+               
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - باونتي - رغوة</td>
+                <td class="B">باونتي لاتية</td>
+            </tr>
+            <tr>
+              
+                <td class="B">1500﷼</td>
+              <td class="B">قهوة - حليب - حليب محلى - فانيلا</td>
+                <td class="B">اسبانش لاتية</td>
+            </tr>
+            <tr>
+            
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة مركزة - حليب</td>
+                <td class="B">فلات وايت</td>
+            </tr>
+            <tr>
+             
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة مركزة - حليب</td>
+                <td class="B">كورتادو</td>
+            </tr>
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة مركزة - شوكولاتة - حلب</td>
+                <td class="B">كافي موكا</td>
+            </tr>
+
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة تركية</td>
+            </tr>
+            
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة مركزة دبل - ماء ساخن</td>
+                <td class="B">امريكانو</td>
+            </tr>
+            
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">حليب - شوكلت</td>
+                <td class="B">هوت شوكلت</td>
+            </tr>
+            
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">قهوة - حليب - كراميل</td>
+                <td class="B">كراميل ميكاتو</td>
+            </tr>
+
+            <tr>
+              
+                <td class="B">1000﷼</td>
+                <td class="B">قهوة - رغوة حليب</td>
+                <td class="B">اسبريسو ميكاتو</td>
+            </tr>
+
+            <tr>
+              
+                <td class="B">750﷼</td>
+                <td class="B">قهوة سادة</td>
+                <td class="B">اسبريسو</td>
+            </tr>
+
+            <tr>
+              
+                <td class="B">500﷼</td>
+                <td class="B">شاي اخضر - ماء ساخن</td>
+                <td class="B">شاهي اخضر</td>
+            </tr>
+
+            <tr>
+              
+                <td class="B">500﷼</td>
+                <td class="B">شاي احمر - حليب - ماء ساخن</td>
+                <td class="B">شاهي حليب</td>
+            </tr>
+            <tr>
+              
+                <td class="B">3000﷼</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة عربية دلة صغير</td>
+            </tr>
+            <tr>
+              
+                <td class="B">5000﷼</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة عربية دلة كبير</td>
+            </tr>
+            <tr>
+              
+                <td class="B">1500﷼</td>
+                <td class="B">.........................</td>
+                <td class="B">v60 قهوة مقطرة</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                    للتواصل
+                    </td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <br>
+
+</article>
+
+  <!-- move top -->
+  
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- //move top -->
+</section>
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/theme-change.js"></script>
+
+<!-- js for portfolio lightbox -->
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/jquery.chocolat.js "></script>
+<!--light-box-files -->
+<script type="text/javascript ">
+  $(function () {
+    $('.w3_agile_portfolio_grid a').Chocolat();
+  });
+</script>
+<!-- /js for portfolio lightbox -->
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<!-- script for testimonials -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        480: {
+          items: 1,
+          nav: true
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for testimonials -->
+
+<!-- script for blog slider -->
+<script>
+  $(document).ready(function () {
+    $('.owl-two').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        992: {
+          items: 2,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for blog slider -->
+
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for banner slider-->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
